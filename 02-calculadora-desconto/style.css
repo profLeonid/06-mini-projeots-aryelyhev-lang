@@ -109,6 +109,11 @@ button:hover {
   justify-content: center;
 }
 
+.resultado.desconto5{
+  border: 2px solid #14532d;
+  background-color: #193c27;
+}
+
 footer {
   display: flex;
   align-items: flex-end;

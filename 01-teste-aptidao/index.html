@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Teste de Aptidão</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css" />  
+  <script src="./app.js" defer></script>
 </head>
 
 <body>
@@ -21,11 +22,16 @@
       </p>
 
       <label>Tempo (s)</label>
-      <input type="number" placeholder="Ex: 13.8" />
+      <input id="tempo" type="number" placeholder="Ex: 13.8"/>
+      <!--sempre que algum elemento precisar ineragir com o js, é necessario ter um id-->
 
-      <button>Avaliar</button>
+      <!--chama a função avaliar, sempre que clicarem 1 vez no botão-->
+      <button onclick="avaliar()" >Avaliar</button>
 
-      <div class="resultado">
+      <!--guarda o resultado da classe "apto" ou "nao-apto"-->
+      <!--foi criado uma função removerClasses para que a classe resultado-->
+      <!--não acabe guardando dois resultados ao mesmo tempo, mesmo após ser digitado outro valor-->
+      <div id="resultado" class="resultado">
         O resultado aparecerá aqui
       </div>
     </div>
