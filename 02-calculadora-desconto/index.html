@@ -21,14 +21,14 @@
 
       <!--guarda o valor inicial-->
       <label>Preço Original (R$)</label>
-      <input id="valorOriginal" type="number" placeholder="Ex: 200" />
+      <input id="preco" type="number" placeholder="Ex: 200" />
 
       <!--guarda o valor do desconto-->
       <label>Desconto (%)</label>
-      <input id="valorDesconto" type="number" placeholder="Ex: 15" />
+      <input id="desconto" type="number" placeholder="Ex: 15" />
 
       <!--chama a função calcularDesconto sempre que o botão for clicado-->
-      <button onclick="calcularDesconto()">Calcular</button>
+      <button id="calcular">Calcular</button>
 
       <!--campo onde deve aparecer o resultado-->
       <div id="resultado" class="resultado">

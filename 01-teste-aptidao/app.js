@@ -4,6 +4,7 @@
 //função para remover o resultado apto e nao-apto sempre que o usuario for digitar novamente
 //para não armazenar o mesmo resultado duas vezes 
 function removerClasses(){
+    //pega os elementos guardados no resultado
     const resultado = document.getElementById('resultado')
     resultado.classList.remove("apto", "nao-apto")
 }
