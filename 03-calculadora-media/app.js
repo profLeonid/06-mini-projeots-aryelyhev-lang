@@ -9,11 +9,12 @@ function removerClasses() {
     resultado.classList.remove('aprovado', 'recuperacao', 'reprovado')
 }
 
-//função para receber as notas e calcular a média do aluno
-function calcularMedia(nota1, nota2, nota3) {
+//função para realizar o calculo da media
+//recebe variaveis criadas para serem usadas apenas no calcula media
+function calcularMedia(primeiraNota, segundaNota, terceiraNota) {
 
     //soma todos os valores das notas e divide por 3
-    const calculoDaMedia = (nota1 + nota2 + nota3) / 3
+    const calculoDaMedia = (primeiraNota + segundaNota + terceiraNota) / 3
     return calculoDaMedia //retorna o resultado da soma
 }
 
@@ -41,6 +42,7 @@ function exibirResultado() {
 }
 
 //função responsavel por trocar a cor de acordo com o resultado da media 
+//recebe o return calculoDaMedia
 function trocarCor(calculoDaMedia) {
 
     //pega o elemento guardado no "resuldado" pelo id

@@ -123,3 +123,27 @@ footer p {
   text-align: center;
   padding: 1rem;
 }
+
+.resultado.abaixoPeso {
+  background-color: #1e3a5f;
+}
+
+.resultado.pesoNormal {
+  background-color: #14532d;
+}
+
+.resultado.sobrepeso {
+  background-color: #713f12;
+}
+
+.resultado.obesidade1 {
+  background-color: #8a1c1c;
+}
+
+.resultado.resultado.obesidade2 {
+  background-color: #590b0b;
+}
+
+.resultado.resultado.obesidade3 {
+  background-color: #2e0101;
+}
